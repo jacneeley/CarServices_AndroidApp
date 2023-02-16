@@ -6,12 +6,8 @@ User can enter numerical values and select different product categories using a 
 User can access different services from the main page. "MainActivity" acts as a landing page, each button will take the user to another screen with different services.
 
 ### Main Files:
-
-#### XML Files
-- Found in app/src/main/res/layout/
-
-#### Java Files
-- Found in app/src/main/java...
+- XML files: Found in app/src/main/res/layout/
+- Java files: Found in app/src/main/java...
 
 ## Screens:
 ![Android App MainActivity Screen.](mainactivity.png "MainActivity Screen")
