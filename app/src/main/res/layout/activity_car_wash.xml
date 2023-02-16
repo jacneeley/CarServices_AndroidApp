@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context=".CarWash">
+
+    <EditText
+        android:id="@+id/txtWashNum"
+        android:layout_width="247dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#4F588E"
+        android:ems="10"
+        android:hint="How many Washes?"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#4F588E"
+        app:layout_constraintBottom_toTopOf="@+id/spnCabType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivityTitle2" />
+
+    <TextView
+        android:id="@+id/txtTitle3"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Car Services"
+        android:textAllCaps="true"
+        android:textColor="#4F588E"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/txtActivityTitle2"
+        android:layout_width="157dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Car Wash"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#4F588E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle3"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="265dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWashNum">
+
+        <RadioButton
+            android:id="@+id/radExterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4F588E"
+            android:checked="true"
+            android:text="Exterior Wash"
+            android:textColor="#4F588E" />
+
+        <RadioButton
+            android:id="@+id/radExteriorPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4F588E"
+            android:text="Exterior Wash/w Vacuum"
+            android:textColor="#4F588E" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcWash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4F588E"
+        android:text="Calculate"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtWashResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="#4F588E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcWash" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

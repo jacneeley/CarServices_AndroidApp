@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">carApp_neeleyJacob</string>
+    <string-array name="txtGroup">
+        <item>SUV</item>
+        <item>Sedan</item>
+        <item>Minivan</item>
+    </string-array>
+</resources>
